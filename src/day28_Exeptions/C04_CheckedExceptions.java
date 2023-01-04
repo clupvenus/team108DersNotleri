@@ -1,12 +1,18 @@
 package day28_Exeptions;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class C04_CheckedExceptions {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
 
-        FileInputStream fis=new FileInputStream("src/day28_Exeptions/metin.txt");
+        FileInputStream fls=new FileInputStream("src/day28_Exeptions/metin.txt");
+        int k=0;
+       while((k=fls.read())!=(-1)) System.out.print((char)k);
+
+      /* k=fls.read();
+        System.out.println((char)k);*/
+
 
         /*
         Bazi kodlari yazdigimiza Java kompile time sirasinda o kodlarda exception riskini gorur.

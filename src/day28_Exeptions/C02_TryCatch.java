@@ -30,7 +30,7 @@ public class C02_TryCatch {
             System.out.println("Bolen sayi sifir olmasin");
             e.printStackTrace();
         }
-
+        System.out.println("Devam");
 
     }
 }
