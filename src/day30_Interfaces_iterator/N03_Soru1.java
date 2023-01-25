@@ -24,7 +24,7 @@ public class N03_Soru1 {
         ListIterator lit=sayilar.listIterator();
         while (lit.hasNext()){
       Integer sayi=(Integer) lit.next();
-      if (sayi<20){lit.remove();}
+      if (sayi<20||sayi>40){lit.remove();}
         }
         System.out.println(sayilar);
     }
